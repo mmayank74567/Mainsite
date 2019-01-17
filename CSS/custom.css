@@ -1,0 +1,260 @@
+/*********************NAVBAR-STYLING***********************/
+
+/*****For-Navbar-Background-Color*****/
+.navbar-default{
+    background-color:white;
+    border-radius: 0px;
+    height:60px;
+    margin-bottom: 0px;/**To-reduce-gap-between-navbar-and-carousel**/ 
+}
+
+
+/*****For-Navbar-Text-and-Icons*****/
+.navbar-default .navbar-nav {
+    margin-left: 80px;
+}
+.navbar-default .navbar-nav:hover,.navbar-default .navbar-nav:focus{
+    color:#FFF950;
+}
+
+
+/*****Navbar-Brand-Logo*****/
+.navbar-default .navbar-brand {
+    margin-left: 20px;
+    color: Black;
+    padding-top: 20px;
+    font-family: 'Rakkas', cursive;
+    font-weight: bold;
+}
+
+
+/*****Navbar-Brand-Logo-Hover-Controls******/  
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color:#FFF950;
+}
+
+
+/*****Navbar-Image-icon-Controls*****/
+.glyphicon-home{
+    color:#5DBCD2;
+    margin-right: 5px;
+}
+.glyphicon-user{
+    color:#5DBCD2;
+    margin-right: 5px;
+}
+.glyphicon-briefcase{
+    color:#5DBCD2;
+    margin-right: 5px;
+}
+.glyphicon-earphone{
+    color:#FFF950;
+    margin-right: 5px;
+}
+.glyphicon-list-alt{
+    color:#FFF950;
+    margin-right: 5px;
+}
+
+.navbar-default .navbar-nav > li {
+    padding-left: 10px;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    display: -webkit-inline-box;
+    color:gray;
+    margin: 0px;
+    font-family: 'Rakkas', cursive;
+    padding-top: 18px;
+    font-size: 16px;
+    font:bold;
+}
+
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus{
+    color:#5DBCD2;
+}
+
+/*****************************************************************/
+
+
+
+/*****************************SEARCH-BOX**************************/
+#mycarousel{
+    position: relative;
+}
+
+.carousel-inner > .item > img {
+    width:640px;
+    height:360px;
+  }
+
+.formm {
+    position:absolute;
+    z-index:9999999;
+    top:25%; 
+    left:370px; 
+    bottom:auto; 
+    width:50%;
+    height:40%;
+
+}
+
+.formm .form-control{
+     height:60px;
+     border:none;
+     background-color: rgba(255, 255, 255, 0.5);
+     border:none;
+     color:black;
+     visibility: visible;
+     font-size: 25px;
+}
+
+.btn-default{
+    background-color:rgba(255,255,0,0.5);
+    border:none;
+}
+
+.btn-default:hover,.btn-default:focus{
+    color:#5DBCD2;
+}
+
+.glyphicon-search{
+    height:45px;
+    font-size: 20px;
+    padding:10px;
+    color:black;
+    height:47.5px;
+}
+
+/***********************************************************/
+
+
+
+/**************************FOOTER**************************/
+#myFooter {
+    background-color:white;
+    color: black;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .info{
+    text-align: justify; 
+    color: #d2d1d1;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter .logo{
+    margin-top: 10px;
+}
+
+#myFooter .second-bar .logo a{
+    color:white;
+    font-size: 28px;
+    float: left;
+    font-weight: bold;
+    line-height: 68px;
+    margin: 0;
+    padding: 0;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: #5DBCD2;
+}
+
+#myFooter .second-bar {
+    text-align: center;
+    background-color: #33373e;
+    text-align: center;
+}
+
+#myFooter .second-bar a {
+    font-size: 22px;
+    color: gray;
+    padding: 10px;
+    transition: 0.2s;
+    line-height: 68px;
+}
+
+#myFooter .second-bar a:hover {
+    text-decoration: none;
+}
+
+#myFooter .social-icons {
+    float:right;
+}
+
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+
+    #myFooter .info{
+        text-align: center;
+    }
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+
