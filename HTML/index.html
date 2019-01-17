@@ -1,22 +1,154 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
 <head>
-    <title>Home Page</title>
+    <title>
+
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<body>
+    <div class="container-fullwidth">
 
-<body style="text-align: center;">
-    <h1>Harshit was here.</h1>
-    <h2>It'll have Toolbar|Searchbar</h2>
-    <p>This page will have stuff like <br> Why Mowglie? + Join Us(for property owners) + Difference between Hostel.PG,Shared Rooms and Flats + Testimonials + Featured properties + Our Contact Address<br><br> Home + About Us + Explore (City wise local attractions based on reveiws) + Contact Us + List Your Property</p>
-    <h2>From the searchbar, it</h2>
-    <h3>Will link to <a href="search.html">search result</a> page </h3><br><br>
-    <h2>From the toolbar, it</h2>
-    <h3>Will link to <a href="index.html">itself</a></h3>
-    <h3>Will link to <a href="joinus.html">join us</a></h3>
-    <h3>Will link to <a href="explore.html">explore</a></h3>
-    <h3>Will link to <a href="listp.html">list your property</a></h3>
+        <!--Row-for-the-header-starting-here-->
+        <div class="row">
+                <div class="col-sm-12">    
+                <nav class="navbar navbar-default ">
+                    <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">MOWGLIE</a>
+                    </div>
+                    
+                    <ul class="nav navbar-nav ">
+                
+                        <li class="nav-item"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li class="nav-item"><a href="#"><span class="glyphicon glyphicon-user"></span>  About Us</a></li>
+                        <li class="nav-item"><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Explore</li>
+                        </ul>   
+                    <ul class="nav navbar-nav navbar-right">        
+                        <li class="nav-item"><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact Us</li>
+                        <li class="nav-item"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> List Property</li>
+                   
+                    </ul>
+                    </div>
+                </nav>
+                </div>
+        </div>
+        <!--Row-for-Header-Ending-Here-->
 
+        <!--Row for the Carousel starting here-->
+        <div class="row"> 
+                <div class="col-sm-12">    
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <!--Search-Box-->
+                    <form class="formm"  method="POST">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="search">
+                                  <div class="input-group-btn">
+                                   <button class="btn btn-default" type="submit"  name="submit">
+                                     <i class="glyphicon glyphicon-search"></i>
+                                   </button>
+                                  </div>    
+                            </div>
+                    </form>
+                       
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3" ></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                    </ol>
+        
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="../IMAGES/Main.jpg" alt="Los Angeles" style="width:100%;height:60%;">
+                    </div>
+                    <div class="item">
+                        <img src="../IMAGES/Kitchen.jpg" alt="New york" style="width:100%;height:60%;">
+                    </div>
+                    <div class="item">
+                        <img src="../IMAGES/Dinning Room.jpg" alt="New york" style="width:100%;height:60%;">
+                    </div>
+                    <div class="item">
+                        <img src="../IMAGES/Gym.jpg" alt="New york" style="width:100%;height:80%;height:60%;">
+                    </div>
+                    <div class="item">
+                        <img src="../IMAGES/bedroom.jpg" alt="New york" style="width:100%;height:60%;">
+                    </div>
+                    <div class="item">
+                        <img src="../IMAGES/Bathroom.jpg" alt="New york" style="width:100%;height:60%;">
+                    </div>
+                    </div>
+        
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            <!--Row of carousel ending here-->   
+            
+            <!--Footer-->
+            <footer id="myFooter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h5>Get started</h5>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Sign up</a></li>
+                                    <li><a href="#">Downloads</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <h5>About us</h5>
+                                <ul>
+                                    <li><a href="#">Company Information</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Reviews</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <h5>Support</h5>
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Help desk</a></li>
+                                    <li><a href="#">Forums</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 info">
+                                <h5>Information</h5>
+                                <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-bar">
+                       <div class="container">
+                            <h2 class="logo"><a href="#"> LOGO </a></h2>
+                            <div class="social-icons">
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+        </div>
 </body>
-
 </html>
